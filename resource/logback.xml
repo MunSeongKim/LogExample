@@ -42,22 +42,22 @@
 		</rollingPolicy>
 		<triggeringPolicy
 			class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>1MB</MaxFileSize>
+			<MaxFileSize>10KB</MaxFileSize>
 		</triggeringPolicy>
 	</appender>	
 
 
 	<!--
-		kr.co.saramin.logexample2 아래 패키지 로그들만  C:\LogExample\logexample2.log 파일에만  출력하는 로거
+		com.cafe24.logexample2 아래 패키지 로그들만  C:\LogExample\logexample2.log 파일에만  출력하는 로거
 	-->
-	<logger name="com.bigdata2017.logexample2"  level="info" additivity="false">
+	<logger name="com.cafe24.logexample2"  level="info" additivity="false">
             <appender-ref ref="fileAppender2" />
     </logger>
     
 	<!--
-		kr.co.saramin.logexample3 아래 패키지 로그들만  C:\LogExample\logexample3.log 파일과 콘솔로 출력하는 로거
+		com.cafe24.logexample3 아래 패키지 로그들만  C:\LogExample\logexample3.log 파일과 콘솔로 출력하는 로거
 	-->
-	<logger name="com.bigdata2017.logexample3"  level="warn" additivity="false">
+	<logger name="com.cafe24.logexample3"  level="warn" additivity="false">
             <appender-ref ref="fileAppender3" />
 			<appender-ref ref="consoleAppender" />
     </logger>    
